@@ -1,0 +1,68 @@
+Especificación del problema.
+Lista de requerimientos.
+
+
+Req. 1. Gestionar cuentas de usuario en el sistema (Administrador)
+. Agregar nuevo usuario
+. Consultar información de usuario (Todos los usuarios)
+. Modificar información de usuario (Algunos datos predefinidos)
+
+Req. 2. Validación de usuarios 
+. Validar credenciales de usuario.
+. Desconexión de usuario
+
+Req. 3. Afiliación de clientes
+. Afiliar a un nuevo cliente.
+. Consultar un cliente.
+. Desafiliar a un cliente. 
+. Renovar afiliación cliente. 
+
+Req. 4. Consultar catálogo 
+. Consultar catálogo por categoría.
+
+Req. 5. Consulta de préstamos y estado de afiliación.
+. Consultar préstamos por doc de identificación.
+. Consultar fechas de afiliación por doc de identificación.
+
+Req. 6. Registar ventas
+. Registrar los datos básicos de las ventas (id del producto, cantidad, precio, usuario, etc.) 
+
+Req. 7. Actualización del inventario de la tienda 
+. Registar productos nuevos
+. Actualizar productos existentes 
+. Dar de baja productos existentes.
+
+Req. 8. Préstamo (alquilar) artículos (Sólo clientes afiliados)
+. Registrar información básica del alquiler (Datos del cliente, datos del artículo, fechas, Precio,  etc)
+. Renovar alquiler (Sólo se podrá hacer una renovación consecutiva.)
+. Devolución de artículos (Registrar la devolución del artículo.)
+
+Req. 9. Generación de descuentos. 
+. Una transación del sistema deberá aplicar los siguientes siguientes descuentos:
+ 15% sobre el valor del producto o servicio si la afiliación es semestral. 25%, si la afiliación es anual. 
+
+Req. 10. Control de préstamos
+. Una transación del sistema deberá controlar las fechas de vencimiento de los préstamos 
+  y generar alarma de los préstamos vencidos.
+. Una transación del sistema deberá generar un alarma para los préstamos próximos a vencerse, 
+  dos días calendario antes del vencimiento.
+
+Req 11. Vista de estado de los prestamos 
+. Cuando el administrador del sistema ingrese deberá ver un listado de los préstamos vencidos o próximos a vencerse.
+ 
+Req. 12. Auditoría de préstamos y ventas.
+. Registrar información básica de auditoría de ventas (usuario de la transacción, fecha y hora, etc.) 
+. Registrar informaciòn básica de auditoría de préstamos. 
+
+Req 13. Generación de reportes.
+. Se debe generar un reporte consolidado de ventas en un rango de fechas.
+. Se debe generar un reporte consolidado de préstamos en un rango de fechas.
+
+-- Extend
+
+Los criterios a aplicar para saber si la relación de extensión es aplicable son los siguientes:
+
+    Hay cuando menos un caso base y un caso extendido.
+    El caso base no se ve modificado por la existencia del caso extendido.
+    El caso base es un caso concreto atado a cuando menos un actor.
+    El caso extendido incorpora al caso base por completo.
